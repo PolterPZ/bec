@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+Javanese:700&display=swap");
+
+@font-face {
+    font-family: 'Capture It';
+    src: url('../fonts/Capture-it.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Mont;
+    src: url('../fonts/Mont-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'New Zelek';
+    src: url('../fonts/New_Zelek.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
