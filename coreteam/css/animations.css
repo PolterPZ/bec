@@ -328,3 +328,21 @@
     }
 }
 
+@keyframes label-glitch {
+    0%{
+        display: none;
+        box-shadow: 140px 20px 0px #538fff, 50px -50px 0px #6A3AA8, 140px 20px 20px #538fff, 50px -50px 20px #6A3AA8;
+    }
+    33%{
+        box-shadow: -100px -60px 0px #6E9FC9, -50px 50px 0px #391349, -100px -60px 20px #6E9FC9, -50px 50px 20px #391349;
+        display: block;
+    }
+    66%{
+        box-shadow: -100px -100px 0px #E3705F, -50px 50px 0px #874da0, -100px -100px 20px #E3705F, -50px 50px 20px #874da0;
+        display: block;
+    }
+    100%{
+        box-shadow: 140px 20px 0px #538fff, 50px -50px 0px #6A3AA8, 140px 20px 20px #538fff, 50px -50px 20px #6A3AA8;
+        display: none;
+    }
+}
