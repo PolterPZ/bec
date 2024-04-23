@@ -1,0 +1,28 @@
+section > [class*="__container"] {
+    box-shadow: 10px 10px 60px #000, 0 0 10px #FF842C, inset 0 0 20px #FF842C;
+    
+}
+
+.sub-title {
+    font-family: 'New Zelek';
+    font-size: 40px;
+}
+
+.gear img {
+    max-width: 100%;
+    filter: drop-shadow(7px 7px 0px #ff842c);
+    transition: filter 0.5s ease;
+}
+
+.gear img {
+    cursor: pointer;
+}
+
+.gear img:hover {
+    animation-play-state: running;
+    filter: drop-shadow(7px 7px 0px #ff2c2c);
+ 
+}
+.text{
+    line-height: 1.2;
+}
