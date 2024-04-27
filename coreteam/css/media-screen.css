@@ -1,0 +1,112 @@
+@media (max-width: 1300px){
+  
+}
+@media (max-width: 1024px) {
+    .wrapper{
+        display: none;
+    }
+    .gear{
+        z-index: -2;
+    }
+    .menu .menu__burger{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background: url("../img/menu.svg") no-repeat;
+        background-size: contain;
+    }
+    .menu .menu__burger.active{
+        background: url("../img/close.svg") no-repeat;
+        background-size: contain;
+    }
+    .menu .menu__list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        padding-top: 100px;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-top: 0px;
+        background-color: #181B22;
+
+        color: #fff;
+    }
+
+    .menu .menu__logo{
+        max-width: 70px;
+        justify-content: center;
+        z-index: 50;
+    }
+    .menu .menu__logo--symbol{
+        width: 70px;
+    }
+    .menu .menu__overlay{
+        right: 20px;
+    }
+    .menu .menu__logo--bec,  .menu .menu__logo::after, .menu .menu__logo::before, .menu .menu__overlay{
+       display: none;   
+       
+    }
+   
+  
+    .section-3__label{
+        display: none;
+    }
+    .section-3__container{
+        flex-direction: column;
+    }
+    .section-3__sub-title{
+        text-align: center;
+    }
+    
+    #panels .panel__sub-title{
+        font-size: 50px;
+    }
+    
+}   
+@media (max-width: 768px) {
+    body .gear1-wrapper {
+        padding: 0 15px;
+    }
+    
+    .section-3__label{
+        display: none;
+    }
+    .section-2__container{
+        flex-direction: column;
+    }
+    .section-2__img{
+        width: 200px;
+        margin: 0 auto;
+    }
+    #panels .panel__construction-line{
+        height: 160px;
+    }
+}
+@media (max-width: 768px) {
+     .section-1 .bec{
+        display: none;
+    }
+     .section-1 .symbol{
+        display: none;
+    }
+    #panels .panel__sub-title{
+        font-size: 37px;
+    }
+    .menu .menu__logo {
+        visibility: visible;
+        animation: none;
+        animation-delay: 0s;
+    }
+}

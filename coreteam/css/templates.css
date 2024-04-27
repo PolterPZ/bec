@@ -1,0 +1,100 @@
+section > [class*="__container"] {
+    box-shadow: 10px 10px 60px #000, 0 0 10px #FF842C, inset 0 0 20px #FF842C;
+    border: 2px solid #FF842C;
+}
+
+.text{
+ font-size: 20px;
+    line-height: 1.2; 
+}
+.title{
+  font-size: 50px;
+  font-family: 'Capture It';
+  text-align: center;
+}
+.sub-title {
+    font-family: 'New Zelek';
+    font-size: 40px;
+}
+.gear{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+.gear img {
+    max-width: 50%;
+    filter: drop-shadow(7px 7px 0px #ff842c);
+    transition: filter 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    
+
+}
+.gear> :nth-child(1){
+    top: 50px;
+    left: 0;
+    /* transform: translateX(-100%); */
+}
+.gear> :nth-child(2){
+    top: 0;
+    left: 50px;
+    /* transform: translateX(100%); */
+}
+.gear> :nth-child(3){
+    top: 70px;
+    left: 80px;
+    /* transform: translateX(100%); */
+}
+.gear img:hover {
+    animation-play-state: running;
+    filter: drop-shadow(7px 7px 0px #ff2c2c);
+}
+
+.gear> :not(:nth-child(2)) {
+    --d: 7s;
+    /* animation duration */
+    --s: 0.5;
+    /* speed factor */
+    --_a: r linear infinite;
+  
+    animation:
+      var(--_a) var(--d),
+      var(--_a) calc(var(--d)/var(--s)) reverse paused;
+    animation-composition: add;
+    
+  }
+  
+  .gear> :nth-child(2) {
+    --d: 7s;
+    /* animation duration */
+    --s: 0.5;
+    /* speed factor */
+    --_a: r linear infinite reverse;
+  
+    animation:
+      var(--_a) var(--d),
+      var(--_a) calc(var(--d)/var(--s)) paused;
+    animation-composition: add;
+    position: absolute;
+    
+  
+  }
+
+.gear1-wrapper{
+    max-width: 1200px;
+  padding: 0 40px;
+    margin: 0 auto;
+    position: relative;
+  
+  }
+  .gear2-wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .gear3-wrapper{
+    opacity: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+  }
