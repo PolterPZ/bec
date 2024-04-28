@@ -109,6 +109,7 @@ links.forEach(function (item) {
 
 function linkClick() {
   menu.classList = "menu__list";
+   burger.classList.toggle("active");
 }
 
 
